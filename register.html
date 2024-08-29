@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="register-page">
+    <!-- navbar -->
+    <header>
+        <div class="nav-left">
+            <a href="main.html"> <img src="assets/WillifyLogo.png" alt="Willify Logo" class="Logo"></a>
+        </div>
+        <div class="nav-right">
+            <a href="songs.html" class="nav-text">Songs</a>
+            <a href="register.html" class="nav-text">Register</a>
+            <a href="about.html" class="nav-text">About Us</a>
+        </div>
+    </header>
+
+    <div class ="div-content">
+        <div class="content-left">
+            <div class="register-container">
+                <h2 class="regist-title">Create an Account</h2>
+                <hr>
+                <form method="POST">
+                    <div class="textbox">
+                        <strong>Name</strong>
+                        <input type="text" id="name" name="name" class="input-textbox">
+                    </div>
+                    <div class="textbox">
+                        <strong>Email</strong>
+                        <input type="text" id="email" name="email" class="input-textbox" >
+                    </div>
+                    <div class="textbox">
+                        <strong>Password</strong>
+                        <input type="password" id="password" name="password" class="input-textbox" >
+                    </div>
+                    <div class="textbox">
+                        <strong>Age</strong>
+                        <input type="number" id="age" name="age" class="input-textbox" >
+                    </div>
+                    <div class="textbox">
+                        <strong>Gender</strong>
+                        <div id="radioGroup">
+                            <div class="radioItem">
+                                <input type="radio" id="male" name="gender" >
+                                <label for="male">Male</label>
+                            </div>
+                            <div class="radioItem">
+                                <input type="radio" id="female" name="gender" >
+                                <label for="female">Female</label>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div id="error"></div>
+                    <button class="regist-button" type="button" onclick="validateForm()">Create Account</button>
+                </form>
+            </div>
+        </div>
+        <div class="content-right">
+            <h1 class="regist-title">Start Listening to</h1>
+            <h2 class="regist-title2">Your favourite tunes~</h2>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    
+</body>
+
+</html>
